@@ -1,0 +1,48 @@
+:root {
+  --s-pd: 5px;
+  --m-pd: 10px;
+  --xl-pd: 20px;
+  --xxl-pd: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: var(--xxl-pd) var(--xl-pd);
+  width: max(50vw, 300px);
+  background: #f7f4f4;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px rgb(0 0 0 / 30%);
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: max(50%, calc(300px - 2 * var(--xl-pd)));
+}
+
+.form label.full {
+  align-items: stretch;
+  width: 100%;
+}
+
+.form input {
+  padding: var(--s-pd) var(--m-pd);
+}
